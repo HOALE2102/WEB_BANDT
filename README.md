@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Store - Cửa hàng điện thoại</title>
+    
+    <style>
+        /* --- BẮT ĐẦU PHẦN CSS --- */
+
+        /* Thiết lập cơ bản cho toàn bộ trang */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Container để giới hạn chiều rộng nội dung */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header chính */
+        .main-header {
+            background-color: #2c3e50; /* Màu nền header */
+            color: #ecf0f1; /* Màu chữ header */
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #3498db; /* Đường viền dưới màu xanh */
+        }
+
+        .main-header .container {
+            display: flex; /* Dùng flexbox để sắp xếp logo và tên cửa hàng */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            flex-wrap: wrap; /* Cho phép xuống dòng nếu màn hình nhỏ */
+        }
+
+        .logo {
+            margin-right: 15px; /* Khoảng cách giữa logo và tên cửa hàng */
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 60px; /* Kích thước logo */
+            height: 60px;
+            border-radius: 50%; /* Bo tròn logo nếu là hình vuông */
+            border: 2px solid #ecf0f1; /* Viền trắng cho logo */
+        }
+
+        .store-name {
+            margin: 0; /* Bỏ margin mặc định của h1 */
+            font-size: 2.5em; /* Kích thước tên cửa hàng */
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-style: italic;
+            margin-top: 5px;
+            width: 100%; /* Đảm bảo tagline nằm dưới tên cửa hàng */
+            font-size: 0.9em;
+        }
+
+        /* Thanh điều hướng */
+        .main-nav {
+            background-color: #34495e; /* Màu nền navigation */
+            padding: 10px 0;
+        }
+
+        .main-nav ul {
+            list-style: none; /* Bỏ dấu chấm của list */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Sắp xếp các mục menu theo chiều ngang */
+            justify-content: center; /* Căn giữa các mục menu */
+        }
+
+        .main-nav ul li {
+            margin: 0 15px; /* Khoảng cách giữa các mục menu */
+        }
+
+        .main-nav ul li a {
+            color: #ecf0f1; /* Màu chữ menu */
+            text-decoration: none; /* Bỏ gạch chân link */
+            padding: 5px 10px;
+            transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+        }
+
+        .main-nav ul li a:hover {
+            background-color: #3498db; /* Màu nền khi rê chuột vào */
+            border-radius: 5px;
+        }
+
+        /* Nội dung chính */
+        .main-content {
+            padding: 40px 0;
+            line-height: 1.6;
+            background-color: #fff;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        .main-footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        /* Responsive cho màn hình nhỏ */
+        @media (max-width: 600px) {
+            .main-header .container {
+                flex-direction: column; /* Xếp logo và tên cửa hàng theo chiều dọc */
+            }
+
+            .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .store-name {
+                font-size: 2em;
+            }
+
+            .main-nav ul {
+                flex-direction: column; /* Xếp menu theo chiều dọc */
+                align-items: center;
+            }
+
+            .main-nav ul li {
+                margin: 5px 0;
+            }
+        }
+        /* --- KẾT THÚC PHẦN CSS --- */
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/60x60?text=LOGO" alt="Smartphone Store Logo" class="logo-img">
+            </div>
+            <div>
+                <h1 class="store-name">Smartphone Store</h1>
+                <p class="tagline">Nơi bạn tìm thấy chiếc điện thoại hoàn hảo</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h2>Chào mừng đến với Smartphone Store!</h2>
+            <p>Khám phá bộ sưu tập điện thoại thông minh đa dạng từ các thương hiệu hàng đầu thế giới.</p>
+            <p>Với nhiều lựa chọn từ điện thoại phổ thông đến cao cấp, chúng tôi cam kết mang đến cho bạn những sản phẩm chất lượng với giá cả cạnh tranh nhất.</p>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Smartphone Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html
